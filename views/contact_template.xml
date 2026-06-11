@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="contact_form_extra_field" inherit_id="website.contact_form" name="Add Extra Field">
+        <xpath expr="//div[@id='contact_form']//input[@name='name']" position="after">
+            <div class="form-group field-extra">
+                <label for="extra_field" class="col-md-3 col-sm-4 control-label">Campo Extra</label>
+                <div class="col-md-7 col-sm-8">
+                    <input type="text" class="form-control" name="extra_field" id="extra_field"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
